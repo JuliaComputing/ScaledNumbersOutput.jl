@@ -3,6 +3,10 @@ uuid = "782ee38f-53f4-49ed-a0ae-b2a4e296146b"
 authors = ["Glen Hertz <glen.hertz@gmail.com>"]
 version = "1.0.0"
 
+[compat]
+julia = "1.6"
+OrderedCollections = "1"
+
 [deps]
 OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 
