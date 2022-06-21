@@ -1,4 +1,4 @@
-using ScaledNumbersOutput, Test
+using ScaledNumbersOutput, Test, Aqua
 @testset "SI" begin
     @test    to_SI(2.5e11) == "250G"
     @test    to_SI(2.5e10) == "25G"
@@ -50,4 +50,7 @@ using ScaledNumbersOutput, Test
 
     @test    to_SI(-2.5e-19) == "-2.5e-19"
     @test    to_SI(-2.5e19) == "-2.5e19"
+end
+@testset "Misc. QA" begin
+    Aqua.test_all(ScaledNumbersOutput)
 end
